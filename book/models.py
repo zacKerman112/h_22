@@ -8,4 +8,7 @@ class Book(models.Model):
     stock_count = models.PositiveIntegerField()
     publishdate = models.DateField()
     is_available = models.BooleanField(default=True)
+    
+def __str__(self):
+    return f"{self.author} {self.title}"    
 
